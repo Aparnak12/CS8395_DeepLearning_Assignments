@@ -20,7 +20,7 @@ Numerical validation of gradient descent convergence on a nonlinear regression t
 
 ---
 
-## Q2: Multi-Layer Perceptrons (MLP) (`DL_HW1_Q2 (1).ipynb`)
+## Q2: Multi-Layer Perceptrons (MLP) (`DL_HW1_Q2.ipynb`)
 
 Examines how MLP size and initialization affect the solution to a classification task.
 
