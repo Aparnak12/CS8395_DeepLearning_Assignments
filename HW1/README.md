@@ -9,12 +9,12 @@ This assignment explores key deep learning concepts through implementation and a
 Numerical validation of gradient descent convergence on a nonlinear regression task using Gaussian basis functions.
 
 - **Q1.1**: Derives and implements gradient descent update rule.
-- **Q1.2**: Computes theoretical upper bound for learning rate \( \epsilon \).
-- **Q1.3**: Calculates Hessian eigenvalues to determine a numerical bound on \( \epsilon \).
-- **Q1.4**: Runs gradient descent with \( \epsilon = 1/\lambda_{\max} \), logs:
-  - Loss vs iteration plot.
-  - Log of norm-squared gradient vs theoretical upper bound plot.
-- **Q1.5**: Plots regression curve fit against data.
+- **Q1.2**: Computes theoretical upper bound for the learning rate (ε).
+- **Q1.3**: Calculates eigenvalues of the Hessian matrix to determine a numerical bound on ε.
+- **Q1.4**: Runs gradient descent with ε = 1 / λ_max, and logs:
+  - Loss vs. iteration plot
+  - Log of norm-squared gradient vs. theoretical upper bound plot
+- **Q1.5**: Plots the final regression curve fit against the dataset.
 
 **Input File**: `hw1_p1.npy`
 
@@ -22,11 +22,11 @@ Numerical validation of gradient descent convergence on a nonlinear regression t
 
 ## Q2: Multi-Layer Perceptrons (MLP) (`DL_HW1_Q2.ipynb`)
 
-Examines how MLP size and initialization affect the solution to a classification task.
+Examines how MLP size and initialization affect the solution to a toy classification task.
 
-- **Q2.1**: Designs minimal architecture to solve a toy dataset. Includes weights, biases, and activations.
-- **Q2.2**: Implements and trains the MLP across 10 random initializations. Plots accuracy histogram and analyzes failures.
-- **Q2.3**: Repeats training with a larger hidden layer (10–100 units), compares histograms and results.
+- **Q2.1**: Designs the smallest possible MLP to solve the problem. Includes weights, biases, and activations.
+- **Q2.2**: Trains the MLP over 10 random initializations and plots a histogram of accuracies. Analyzes any training failures.
+- **Q2.3**: Repeats with a larger hidden layer (10–100 units), compares accuracy distributions and training behavior.
 
 **Input File**: `hw1_p2.npy`
 
@@ -36,15 +36,15 @@ Examines how MLP size and initialization affect the solution to a classification
 
 Analyzes the impact of model complexity and regularization on bias and variance using multiple synthetic datasets.
 
-- **Q3.1**: Fits models with \( M = 7 \) for 10 datasets. Plots:
-  - Each fit \( f_i \) vs ground truth \( f^* \)
-  - Mean prediction \( \bar{f} \) vs \( f^* \)
-  - Estimated bias and variance.
-- **Q3.2**: Repeats above steps with \( M = 21 \); compares results with \( M = 7 \).
-- **Q3.3**: Implements ridge regression with \( \lambda = 0.1 \) for \( M = 21 \); compares bias-variance behavior.
+- **Q3.1**: Trains models with M = 7 on 10 datasets. Plots:
+  - Each individual fit (fᵢ) vs. ground truth (f*)
+  - Mean prediction (f̄) vs. f*
+  - Estimates of bias and variance
+- **Q3.2**: Repeats with M = 21 and compares results to M = 7.
+- **Q3.3**: Uses ridge regression with λ = 0.1 for M = 21. Compares updated bias and variance behavior.
 
 **Input Files**: `hw1_p3.npy`, `hw1_p3_gt.npy`
 
 ---
 
-> All results are obtained using Python (NumPy, PyTorch/MLP as applicable), with visualizations done via matplotlib.
+> All results are implemented in Python using NumPy and PyTorch, with plots generated using Matplotlib.
